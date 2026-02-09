@@ -18,23 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <header>
+    <header class="main-header simple-header">
       <div class="container header-row">
         <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open menu">&#9776;</button>
-        <nav id="navLinks">
-          <a href="index.html">Home</a>
-          <a href="shop.html">Shop</a>
-          <a href="cart.html">Cart</a>
-          <a href="orders.html">My Orders</a>
-          <a href="Aboutus.html">About Us</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="category.html">Categories</a>
-          <a href="admin/login.html">Zadat</a>
-        </nav>
+        <span class="header-brand">Cooperative</span>
       </div>
     </header>
     <aside class="site-sidebar" id="siteSidebar" aria-hidden="true">
       <div class="sidebar-title">Menu</div>
+      <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
       <a href="category.html">Categories</a>
       <a href="cart.html">Cart</a>

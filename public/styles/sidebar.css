@@ -9,6 +9,8 @@
   color: #FFFFFF;
   padding: 20px 16px;
   box-shadow: 4px 0 12px #859864;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
   z-index: 1200;
 }
 
@@ -35,6 +37,10 @@
   color: #5B7917;
 }
 
+.sidebar-open .site-sidebar {
+  transform: translateX(0);
+}
+
 @media (max-width: 900px) {
   .site-sidebar {
     width: 200px;
@@ -44,25 +50,22 @@
 
 @media (max-width: 700px) {
   .site-sidebar {
-    position: static;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 10px;
-    box-shadow: none;
-    border-bottom: 1px solid #859864;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    padding: 16px 12px;
+    box-shadow: 4px 0 12px #859864;
+    border-bottom: none;
   }
 
   .site-sidebar .sidebar-title {
-    flex-basis: 100%;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
   }
 
   .site-sidebar a {
-    margin-bottom: 0;
-    padding: 8px 12px;
-    border: 1px solid #F6F1E6;
+    margin-bottom: 8px;
+    padding: 10px 12px;
+    border: none;
   }
 }
