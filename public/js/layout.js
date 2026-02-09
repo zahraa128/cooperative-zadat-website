@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <a href="Aboutus.html">About Us</a>
           <a href="contact.html">Contact Us</a>
           <a href="category.html">Categories</a>
+          <a href="admin/login.html">Zadat</a>
         </nav>
       </div>
     </header>
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="orders.html">My Orders</a>
       <a href="Aboutus.html">About Us</a>
       <a href="contact.html">Contact</a>
+      <a href="admin/login.html">Zadat</a>
       <a href="#" id="sidebarAuthLink">Login</a>
     </aside>
   `;
