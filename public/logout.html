@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logging out...</title>
+</head>
+
+<body>
+
+  <div id="header"></div>
+  <script>
+    /**
+     * logout.html
+     * ------------
+     * Clears login data and redirects user
+     */
+
+    // Clear login data
+    localStorage.removeItem("customer_id");
+    localStorage.removeItem("customer_name");
+
+    // Optional: clear cart if you want
+    // localStorage.removeItem("cart");
+
+    // Flash message
+    localStorage.setItem("flash_message", "Please login to continue.");
+
+    // Redirect to login page
+    window.location.href = "login_user.html";
+  </script>
+
+  <div id="footer"></div>
+
+    <script src="js/layout.js"></script>
+</body>
+</html>
